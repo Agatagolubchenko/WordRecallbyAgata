@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilingual Memory Recall Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Bilingual Memory Recall Game</h1>
+    <p>Select your native language to begin:</p>
+    <select id="language-select">
+        <option value="English">English</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Russian">Russian</option>
+        <option value="Vietnamese">Vietnamese</option>
+    </select>
+    <button onclick="startGame()">Start</button>
+
+    <div id="game-container">
+        <h2>Listen Carefully</h2>
+        <p>You can only listen to this once. After it finishes, type the 32 words you remember.</p>
+        <div id="audio-container">
+            <audio id="audio-player" controls></audio>
+        </div>
+
+        <div id="words-container"></div>
+
+        <button id="submit-button" onclick="submitWords()" disabled>Done</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
